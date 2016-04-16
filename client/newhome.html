@@ -1,0 +1,159 @@
+<head>
+
+</head>
+
+<body>
+  {{>newhome}}
+</body>
+
+<template name="newhome">
+  {{>nav}}
+
+  <!-- {{#with language}}
+    {{this}}
+    {{text this }}
+  {{/with}} -->
+
+    <div class=" container center-align">
+      <h4> {{text 'maintitle' 'title'}} </h4>
+      <br>
+      <h4 > {{text 'maintitle' 'content'}} </h4>
+    </div>
+
+    <div class="center-align">
+    {{#each listOfSections}}
+      <div class = "section">
+        <img src="{{this.image}}"> <img>
+      <h5>{{ text this.section 'title'}}</h5>
+
+      <p>{{ text this.section 'content'}}</p>
+      <br>
+      <img src="images/icon-sofa-p.png">
+      <!-- <div class="divider"></div> -->
+
+      </div>
+    {{/each}}
+    </div>
+  {{>contact}}
+  {{>bottom}}
+</template>
+
+<template name="nav">
+  <div class="footer-copyright teal " style="height:100px" font-family= 'quicksandregular'>
+  	  <div class="row valign-wrapper">
+        <div class= "col s3 offset-s2">
+         <img src= "images/logo.png"  height="65px" class="valign" >
+        </div>
+        <div class="col s7 ">
+          <div class="row" style="margin-top: 60px">
+          	<div class="col s3 right-align">
+          		<a href="https://app.keyscores.com/keyscores/login" class="white-text">ONLINE REPORT</a>
+          	</div>
+          	<div class="col s1 center-align">
+          		<a class="white-text"> | </a>
+          	</div>
+          	<div class="col s2 center-align">
+          		<a class="white-text">CONTACT</a>
+          	</div>
+            <div class="col s1 center-align">
+          		<a class="white-text"> | </a>
+          	</div>
+          	<div class="col s2 center-align">
+          		<a class="white-text">ITUNES</a>
+          	</div>
+          	<div class="col s1 center-align">
+          		<a class="white-text"> | </a>
+          	</div>
+          	<div class="col s2 left-align">
+          		<a class="white-text">FACEBOOK</a>
+          	</div>
+          </div>
+        </div>
+  	</div>
+  </div>
+  <div class="row">
+    <div class="col s4 offset-s8 ">
+      <div class="col s4 center-align">
+        <a class="teal-text language" id="pt">PORTUGUESE</a>
+      </div>
+      <div class="col s1 center-align">
+        <a class="teal-text"> | </a>
+      </div>
+      <div class="col s3 center-align">
+        <a class="teal-text language" id="sp">SPANISH</a>
+      </div>
+      <div class="col s1 center-align">
+        <a class="teal-text"> | </a>
+      </div>
+      <div class="col s3 left-align">
+        <a class="teal-text language" id="en">ENGLISH</a>
+      </div>
+    </div>
+
+  </div>
+
+</template>
+
+
+<template name="bottom">
+	<!-- Footer  -->
+	  <!-- <footer class="page-footer teal lighten-2"> -->
+
+		<div class="footer-copyright teal valign-wrapper" style="height:150px" font-family= 'quicksandregular'>
+		  <div class="container">
+				<div class="row">
+					<div class="col s3 right-align">
+						<a href="https://app.keyscores.com/keyscores/login" class="white-text">ONLINE REPORT</a>
+					</div>
+					<div class="col s1 center-align">
+						<a class="white-text"> | </a>
+					</div>
+					<div class="col s3 center-align">
+						<a class="white-text">ITUNES</a>
+					</div>
+					<div class="col s1 center-align">
+						<a class="white-text"> | </a>
+					</div>
+					<div class="col s4 left-align">
+						<a class="white-text">FACEBOOK</a>
+					</div>
+		  </div>
+      <div class="row center">
+        <p class="white-text smalltext"> 2014 SOFA DIGITAL </p>
+      </div>
+		</div>
+	</div>
+	  <!-- </footer> -->
+  </template>
+
+<template name="contact">
+  <div class = "container center">
+    <img src="images/sofa-verde.png" height= "65px">
+  <h4> {{text 'contact' 'title'}}  </h4>
+  <div class="row">
+    <div class="col s6" style= "border: 1px">
+      <input type="text" placeholder="NAME"/>
+    </div>
+
+    <div class="col s6" style= "border: 1px">
+      <input type="text"  placeholder="EMAIL"/>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col s12" style= "border: 1px">
+      <input type="text" placeholder="EMAIL" />
+    </div>
+  </div>
+
+
+  <h5> {{text 'contact' 'content'}}  </h5>
+
+  <p class="teal-text"> PHONE: <span class= "grey-text">67890 </span> </p>
+  <p class="teal-text"> E-MAIL: <span class= "grey-text"> INFO@SOFADIGITAL.COM </span> </p>
+
+
+  </div>
+
+</template>
