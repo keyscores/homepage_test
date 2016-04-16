@@ -32,3 +32,28 @@ p {
     font-weight:200;
     color: #757575;
 }
+
+.input-border{
+
+  border: 1px solid #00838f
+}
+
+input{
+      border-bottom: 0px !important
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;
+}
+
+:-ms-input-placeholder {
+   text-align: center;
+}
