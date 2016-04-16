@@ -17,16 +17,17 @@ var texts =  [
         pt: "DISTRIBUA SEUS FILMES NO ITUNES"
     }
   },
-  section: "follow",
-  title: { en: "FOLLOW THE MOVIEW",
-      sp: "SIGA LAS PELÍCULAS",
-      pt: "SIGA OS FILMES"
+  {
+    section: "follow",
+    title: { en: "FOLLOW THE MOVIES",
+        sp: "SIGA LAS PELÍCULAS",
+        pt: "SIGA OS FILMES"
+    },
+    // content:{ en: "WE KNOW LATIN BETTER",
+    //     sp: "CONOCEMOS LATAM MEJOR",
+    //     pt: "CONHECEMOS LATAM MELHOR"
+    // }
   },
-  content:{ en: "WE KNOW LATIN BETTER",
-      sp: "CONOCEMOS LATAM MEJOR",
-      pt: "CONHECEMOS LATAM MELHOR"
-  }
-},
   {
     section: "contact",
     title: { en: "SUBMIT YOUR MOVIE",
@@ -140,7 +141,7 @@ Template.newhome.helpers({
   },
   listOfSections: function(){
     var filter = _.filter( texts, function(e){
-      return !_.contains ( [ "maintitle","contact" ], e.section )
+      return !_.contains ( [ "maintitle","contact", "follow" ], e.section )
     });
 
     // console.log('filter', filter);
