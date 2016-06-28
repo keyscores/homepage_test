@@ -30,7 +30,7 @@
   "appName": "meteor",
 
   // Location of app (local directory)
-  "app": "~/Desktop/sofahomemeteor",
+  "app": "~/Code/sofahomemeteor",
 
   // Configure environment
   "env": {
