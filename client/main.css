@@ -38,6 +38,27 @@ p {
   border: 1px solid #00838f
 }
 
+/*.banner {
+  height: 1px;
+  background-color: transparent;
+  border-bottom: 170px solid #00838f;
+  border-right: 170px solid transparent;
+  width: 100%;
+  position:relative;
+}
+
+.banner:after{
+  content:"";
+  position:absolute;
+  height: 0px;
+  bottom:0px;
+  background-color: transparent;
+  border-top: 170px solid white;
+  border-right: 170px solid transparent;
+  width: 210px;
+  z-index:-1;
+  }*/
+
 input{
       border-bottom: 0px !important
 }
